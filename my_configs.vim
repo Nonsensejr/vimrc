@@ -3,17 +3,30 @@ set cc=80
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
+
 " Start Tagbar started 
 autocmd VimEnter * execute 'TagbarToggle' 
+
 
 " Start NerdTree at start
 let g:NERDTreeWinPos = "left"
 autocmd VimEnter * execute 'NERDTree' | wincmd p
 
+
 " Remember where you left off
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+
+" Map Splits
+nnoremap <leader>\| :vsplit<cr> 
+nnoremap <leader>- :split<cr> 
+
+
+" Map Toggle NERDTree
+map <F9> :NERDTreeToggle<cr>
+map <F10> :TagbarToggle<cr>
 
 " Lightline theme
 let g:lightline = {
@@ -25,10 +38,6 @@ let g:lightline = {
   \ 'subseparator': { 'left': '', 'right': '' }
   \ }
 
-
-
-" CtrlP
-let g:ctrlp_map = '<C-t>'
 
 
 " Close NERDTree when all buffer closed 
