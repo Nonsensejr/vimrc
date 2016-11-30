@@ -1,6 +1,7 @@
 colorscheme molokai 
 set cc=80
 set cursorline
+set nu
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
 
