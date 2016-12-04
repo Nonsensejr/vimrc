@@ -1,8 +1,12 @@
+" Apperance
 colorscheme molokai 
+set nu
 set cc=80
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
+" Project specific vimrc
+set exrc
 
 " Start Tagbar started 
 autocmd VimEnter * execute 'TagbarToggle' 
