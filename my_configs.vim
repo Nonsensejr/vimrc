@@ -33,6 +33,9 @@ nnoremap <leader>- :split<cr>
 map <F9> :NERDTreeToggle<cr>
 map <F10> :TagbarToggle<cr>
 
+" Reset Syntastic Window
+map <C-c> :SyntasticReset<cr>
+
 " Lightline theme
 let g:lightline = {
   \ 'colorscheme': 'wombat',
