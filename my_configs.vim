@@ -9,13 +9,9 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 " Project specific vimrc
 set exrc
 
-" Start Tagbar started 
-autocmd VimEnter * execute 'TagbarToggle' 
 
-
-" Start NerdTree at start
+" Set NerdTree to left
 let g:NERDTreeWinPos = "left"
-autocmd VimEnter * execute 'NERDTree' | wincmd p
 
 
 " Remember where you left off
