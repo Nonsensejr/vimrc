@@ -1,9 +1,10 @@
 " Apperance
 colorscheme molokai 
 set nu
+au InsertEnter * :set relativenumber! 
+au InsertLeave * :set relativenumber
 set cc=80
 set cursorline
-set nu
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Project specific vimrc
@@ -17,7 +18,6 @@ let g:NERDTreeWinPos = "left"
 " Remember where you left off
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
 
 
 " Map Splits
@@ -67,4 +67,3 @@ function! NERDTreeQuit()
     quitall
   endif
 endfunction
-autocmd WinEnter * call NERDTreeQuit()
