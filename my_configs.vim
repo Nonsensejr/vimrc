@@ -1,6 +1,7 @@
 " Apperance
 colorscheme molokai 
 set nu
+set relativenumber
 au InsertEnter * :set relativenumber! 
 au InsertLeave * :set relativenumber
 set cc=80
