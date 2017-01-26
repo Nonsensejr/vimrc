@@ -16,6 +16,10 @@ set exrc
 let g:NERDTreeWinPos = "left"
 
 
+" Set it to true color
+set termguicolors
+
+
 " Remember where you left off
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
