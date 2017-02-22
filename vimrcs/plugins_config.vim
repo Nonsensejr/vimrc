@@ -57,6 +57,12 @@ let g:user_zen_mode='a'
 
 
 """"""""""""""""""""""""""""""
+" => Jedi 
+""""""""""""""""""""""""""""""
+let g:jedi#popup_on_dot = 0
+
+
+""""""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
 ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
