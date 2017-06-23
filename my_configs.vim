@@ -7,6 +7,7 @@ au InsertLeave * :set relativenumber
 set cc=80
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
+set clipboard=unnamed
 
 " Project specific vimrc
 set exrc
