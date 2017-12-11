@@ -23,6 +23,15 @@ map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
+" => markdown folder
+""""""""""""""""""""""""""""""
+set nocompatible
+if has("autocmd")
+  filetype plugin indent on
+endif
+
+
+""""""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
